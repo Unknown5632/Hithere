@@ -1,0 +1,112 @@
+function ANIMATION()
+    if not game:GetService("Workspace"):FindFirstChild("barrage1") and not game:GetService("Workspace"):FindFirstChild("barrage2") and not game:GetService("Workspace"):FindFirstChild("barrage3") and not game:GetService("Workspace"):FindFirstChild("barrage4") then
+        local barrage1 = Instance.new('Animation',game:GetService("Workspace"))
+        barrage1.AnimationId = 'rbxassetid://8254787838'
+        barrage1.Name = "barrage1"
+        local barrage2 = Instance.new('Animation',game:GetService("Workspace"))
+        barrage2.AnimationId = 'rbxassetid://8254789608'
+        barrage2.Name = "barrage2"
+        local barrage3 = Instance.new('Animation',game:GetService("Workspace"))
+        barrage3.AnimationId = 'rbxassetid://8254792138'
+        barrage3.Name = "barrage3"
+        local barrage4 = Instance.new('Animation',game:GetService("Workspace"))
+        barrage4.AnimationId = 'rbxassetid://8254794168'
+        barrage4.Name = "barrage4"
+        Barraging1 = getHumanoid(STAND):LoadAnimation(barrage1)
+        Barraging2 = getHumanoid(STAND):LoadAnimation(barrage2)
+        Barraging3 = getHumanoid(STAND):LoadAnimation(barrage3)
+        Barraging4 = getHumanoid(STAND):LoadAnimation(barrage4)
+    else
+        local barrage1 = game:GetService("Workspace").barrage1
+        local barrage2 = game:GetService("Workspace").barrage2
+        local barrage3 = game:GetService("Workspace").barrage3
+        local barrage4 = game:GetService("Workspace").barrage4
+        Barraging1 = getHumanoid(STAND):LoadAnimation(barrage1)
+        Barraging2 = getHumanoid(STAND):LoadAnimation(barrage2)
+        Barraging3 = getHumanoid(STAND):LoadAnimation(barrage3)
+        Barraging4 = getHumanoid(STAND):LoadAnimation(barrage4)
+    end
+
+    if not game:GetService("Workspace"):FindFirstChild("FLY") and
+    not game:GetService("Workspace"):FindFirstChild("HOVER") and 
+    not game:GetService("Workspace"):FindFirstChild("HOVERV2") and 
+    not game:GetService("Workspace"):FindFirstChild("HOVERV3") and 
+    not game:GetService("Workspace"):FindFirstChild("GLIDE") then
+        local Hover = Instance.new('Animation',game:GetService("Workspace"))
+        local Glide = Instance.new('Animation',game:GetService("Workspace"))
+        local Fly = Instance.new('Animation',game:GetService("Workspace"))
+        local HoverV2 = Instance.new('Animation',game:GetService("Workspace"))
+        local HoverV3 = Instance.new('Animation',game:GetService("Workspace"))
+        Hover.AnimationId = 'rbxassetid://3541114300'
+        Glide.AnimationId = 'rbxassetid://3084858603'
+        Fly.AnimationId = 'rbxassetid://3541044388'
+        HoverV2.AnimationId = 'rbxassetid://13850634687'
+        HoverV3.AnimationId = 'rbxassetid://13850660986'
+        Hover.Name = "HOVER"
+        Glide.Name = "GLIDE"
+        Fly.Name = "FLY"
+        HoverV2.Name = "HOVERV2"
+        HoverV3.Name = "HOVERV3"
+        GLIDE = getHumanoid(STAND):LoadAnimation(Glide)
+        FLY = getHumanoid(STAND):LoadAnimation(Fly)
+        HOVER = getHumanoid(STAND):LoadAnimation(Hover)
+        HOVERV2 = getHumanoid(STAND):LoadAnimation(HoverV2)
+        HOVERV3 = getHumanoid(STAND):LoadAnimation(HoverV3)
+    else
+        GLIDE = getHumanoid(STAND):LoadAnimation(game:GetService("Workspace").GLIDE)
+        FLY = getHumanoid(STAND):LoadAnimation(game:GetService("Workspace").FLY)
+        HOVER = getHumanoid(STAND):LoadAnimation(game:GetService("Workspace").HOVER)
+        HOVERV2 = getHumanoid(STAND):LoadAnimation(game:GetService("Workspace").HOVERV2)
+        HOVERV3 = getHumanoid(STAND):LoadAnimation(game:GetService("Workspace").HOVERV3)
+    end
+    -- Poses :
+    if not game:GetService("Workspace"):FindFirstChild("TopRock") then
+        TopRock = Instance.new('Animation',game:GetService("Workspace"));
+        TopRock.AnimationId = 'rbxassetid://3361276673';
+        TopRock.Name = 'TopRock';
+        Pose1 = getHumanoid(STAND):LoadAnimation(TopRock);
+        Pose1.Looped = true;
+        Pose1.Priority = Enum.AnimationPriority.Action;
+    else
+        TopRock = game:GetService("Workspace"):FindFirstChild("TopRock");
+        Pose1 = getHumanoid(STAND):LoadAnimation(TopRock);
+        Pose1.Looped = true;
+        Pose1.Priority = Enum.AnimationPriority.Action;
+    end
+    
+    if not game:GetService("Workspace"):FindFirstChild("Beckon") then
+        Beckon = Instance.new('Animation',game:GetService("Workspace"));
+        Beckon.AnimationId = 'rbxassetid://5230598276';
+        Beckon.Name = 'Beckon';
+        Pose2 = getHumanoid(STAND):LoadAnimation(Beckon);
+        Pose2.Looped = true;
+        Pose2.Priority = Enum.AnimationPriority.Action;
+    else
+        Beckon = game:GetService("Workspace"):FindFirstChild("Beckon");
+        Pose2 = getHumanoid(STAND):LoadAnimation(Beckon);
+        Pose2.Looped = true;
+        Pose2.Priority = Enum.AnimationPriority.Action;
+    end
+    
+    if not game:GetService("Workspace"):FindFirstChild("Godlike") then
+        Godlike = Instance.new('Animation', game:GetService("Workspace"));
+        Godlike.AnimationId = 'rbxassetid://3337994105';
+        Godlike.Name = 'Godlike';
+        Pose3 = getHumanoid(STAND):LoadAnimation(Godlike);
+        Pose3.Looped = true;
+        Pose3.Priority = Enum.AnimationPriority.Action;
+    else
+        Godlike = game:GetService("Workspace"):FindFirstChild("Godlike");
+        Pose3 = getHumanoid(STAND):LoadAnimation(Godlike);
+        Pose3.Looped = true;
+        Pose3.Priority = Enum.AnimationPriority.Action;
+    end
+
+    
+end
+ANIMATION()	
+function TWEEN(CFRAME)
+    local Tween = game:GetService('TweenService'):Create(getRoot(STAND),TweenInfo.new(.2,Enum.EasingStyle.Linear),{CFrame = CFRAME})
+    Tween:Play();
+    Tween.Completed:Wait();
+end    
