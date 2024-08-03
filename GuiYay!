@@ -119,7 +119,7 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 MainFrame.BorderSizePixel = 0
 MainFrame.ClipsDescendants = true
 MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-MainFrame.Size = UDim2.new(0, 340, 0, 198)
+MainFrame.Size = UDim2.new(0, 480, 0, 270)
 
 TopFrame.Name = "TopFrame"
 TopFrame.Parent = MainFrame
@@ -127,7 +127,7 @@ TopFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 TopFrame.BackgroundTransparency = 1.000
 TopFrame.BorderSizePixel = 0
 TopFrame.Position = UDim2.new(0, 0, 0, 0)
-TopFrame.Size = UDim2.new(0, 340, 0, 22)
+TopFrame.Size = UDim2.new(0, 480, 0, 24)
 
 TopFrameHolder.Name = "TopFrameHolder"
 TopFrameHolder.Parent = TopFrame
@@ -135,30 +135,30 @@ TopFrameHolder.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 TopFrameHolder.BackgroundTransparency = 1.000
 TopFrameHolder.BorderSizePixel = 0
 TopFrameHolder.Position = UDim2.new(0, 0, 0, 0)
-TopFrameHolder.Size = UDim2.new(0, 340, 0, 22)
+TopFrameHolder.Size = UDim2.new(0, 480, 0, 24)
 
 Title.Name = "Title"
 Title.Parent = TopFrame
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.Position = UDim2.new(0.01, 0, 0, 0)
-Title.Size = UDim2.new(0, 96, 0, 18)
+Title.Size = UDim2.new(0, 130, 0, 20)
 Title.Font = Enum.Font.Gotham
 Title.Text = text
 Title.TextColor3 = Color3.fromRGB(99, 102, 109)
-Title.TextSize = 10.000
+Title.TextSize = 12.000
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
 CloseBtn.Name = "CloseBtn"
 CloseBtn.Parent = TopFrame
 CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 CloseBtn.BackgroundTransparency = 0
-CloseBtn.Position = UDim2.new(0.917, 0, 0, 0)
-CloseBtn.Size = UDim2.new(0, 22, 0, 18)
+CloseBtn.Position = UDim2.new(0.92, 0, 0, 0)
+CloseBtn.Size = UDim2.new(0, 30, 0, 24)
 CloseBtn.Font = Enum.Font.Gotham
 CloseBtn.Text = ""
 CloseBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-CloseBtn.TextSize = 12.000
+CloseBtn.TextSize = 14.000
 CloseBtn.BorderSizePixel = 0
 CloseBtn.AutoButtonColor = false
 
@@ -167,7 +167,7 @@ CloseIcon.Parent = CloseBtn
 CloseIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CloseIcon.BackgroundTransparency = 1.000
 CloseIcon.Position = UDim2.new(0.2, 0, 0.2, 0)
-CloseIcon.Size = UDim2.new(0, 14, 0, 14)
+CloseIcon.Size = UDim2.new(0, 18, 0, 18)
 CloseIcon.Image = "http://www.roblox.com/asset/?id=6035047409"
 CloseIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
 
@@ -176,11 +176,11 @@ MinimizeBtn.Parent = TopFrame
 MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 MinimizeBtn.BackgroundTransparency = 0
 MinimizeBtn.Position = UDim2.new(0.85, 0, 0, 0)
-MinimizeBtn.Size = UDim2.new(0, 22, 0, 18)
+MinimizeBtn.Size = UDim2.new(0, 30, 0, 24)
 MinimizeBtn.Font = Enum.Font.Gotham
 MinimizeBtn.Text = ""
 MinimizeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-MinimizeBtn.TextSize = 12.000
+MinimizeBtn.TextSize = 14.000
 MinimizeBtn.BorderSizePixel = 0
 MinimizeBtn.AutoButtonColor = false
 
@@ -189,7 +189,7 @@ MinimizeIcon.Parent = MinimizeBtn
 MinimizeIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MinimizeIcon.BackgroundTransparency = 1.000
 MinimizeIcon.Position = UDim2.new(0.2, 0, 0.2, 0)
-MinimizeIcon.Size = UDim2.new(0, 14, 0, 14)
+MinimizeIcon.Size = UDim2.new(0, 18, 0, 18)
 MinimizeIcon.Image = "http://www.roblox.com/asset/?id=6035067836"
 MinimizeIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
 
@@ -200,15 +200,15 @@ Userpad.Name = "Userpad"
 Userpad.Parent = TopFrameHolder
 Userpad.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
 Userpad.BorderSizePixel = 0
-Userpad.Position = UDim2.new(0.106, 0, 15.98, 0)
-Userpad.Size = UDim2.new(0, 179, 0, 43)
+Userpad.Position = UDim2.new(0.106, 0, 16, 0)
+Userpad.Size = UDim2.new(0, 200, 0, 50)
 
 UserIcon.Name = "UserIcon"
 UserIcon.Parent = Userpad
 UserIcon.BackgroundColor3 = Color3.fromRGB(31, 33, 36)
 UserIcon.BorderSizePixel = 0
-UserIcon.Position = UDim2.new(0.034, 0, 0.124, 0)
-UserIcon.Size = UDim2.new(0, 32, 0, 32)
+UserIcon.Position = UDim2.new(0.034, 0, 0.12, 0)
+UserIcon.Size = UDim2.new(0, 40, 0, 40)
 
 UserIconCorner.CornerRadius = UDim.new(1, 8)
 UserIconCorner.Name = "UserIconCorner"
@@ -218,14 +218,14 @@ UserImage.Name = "UserImage"
 UserImage.Parent = UserIcon
 UserImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UserImage.BackgroundTransparency = 1.000
-UserImage.Size = UDim2.new(0, 32, 0, 32)
+UserImage.Size = UDim2.new(0, 40, 0, 40)
 UserImage.Image = pfp 
 
 UserCircleImage.Name = "UserImage"
 UserCircleImage.Parent = UserImage
 UserCircleImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UserCircleImage.BackgroundTransparency = 1.000
-UserCircleImage.Size = UDim2.new(0, 32, 0, 32)
+UserCircleImage.Size = UDim2.new(0, 40, 0, 40)
 UserCircleImage.Image = "rbxassetid://4031889928"
 UserCircleImage.ImageColor3 = Color3.fromRGB(41, 43, 47)
 
@@ -234,11 +234,11 @@ UserName.Parent = Userpad
 UserName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UserName.BackgroundTransparency = 1.000
 UserName.BorderSizePixel = 0
-UserName.Position = UDim2.new(0.23, 0, 0.116, 0)
-UserName.Size = UDim2.new(0, 98, 0, 17)
+UserName.Position = UDim2.new(0.23, 0, 0.12, 0)
+UserName.Size = UDim2.new(0, 120, 0, 20)
 UserName.Font = Enum.Font.GothamSemibold
 UserName.TextColor3 = Color3.fromRGB(255, 255, 255)
-UserName.TextSize = 13.000
+UserName.TextSize = 14.000
 UserName.TextXAlignment = Enum.TextXAlignment.Left
 UserName.ClipsDescendants = true
 
@@ -247,11 +247,11 @@ UserTag.Parent = Userpad
 UserTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UserTag.BackgroundTransparency = 1.000
 UserTag.BorderSizePixel = 0
-UserTag.Position = UDim2.new(0.23, 0, 0.455, 0)
-UserTag.Size = UDim2.new(0, 95, 0, 17)
+UserTag.Position = UDim2.new(0.23, 0, 0.6, 0)
+UserTag.Size = UDim2.new(0, 120, 0, 20)
 UserTag.Font = Enum.Font.Gotham
 UserTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-UserTag.TextSize = 13.000
+UserTag.TextSize = 14.000
 UserTag.TextTransparency = 0.300
 UserTag.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -263,7 +263,7 @@ ServersHoldFrame.Parent = MainFrame
 ServersHoldFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ServersHoldFrame.BackgroundTransparency = 1.000
 ServersHoldFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
-ServersHoldFrame.Size = UDim2.new(0, 71, 0, 198)
+ServersHoldFrame.Size = UDim2.new(0, 100, 0, 270)
 
 ServersHold.Name = "ServersHold"
 ServersHold.Parent = ServersHoldFrame
@@ -272,15 +272,15 @@ ServersHold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ServersHold.BackgroundTransparency = 1.000
 ServersHold.BorderSizePixel = 0
 ServersHold.Position = UDim2.new(0, 0, 0.058, 0)
-ServersHold.Size = UDim2.new(0, 71, 0, 180)
-ServersHold.ScrollBarThickness = 1
+ServersHold.Size = UDim2.new(0, 100, 0, 240)
+ServersHold.ScrollBarThickness = 2
 ServersHold.ScrollBarImageTransparency = 1
 ServersHold.CanvasSize = UDim2.new(0, 0, 0, 0)
 
 ServersHoldLayout.Name = "ServersHoldLayout"
 ServersHoldLayout.Parent = ServersHold
 ServersHoldLayout.SortOrder = Enum.SortOrder.LayoutOrder
-ServersHoldLayout.Padding = UDim.new(0, 7)
+ServersHoldLayout.Padding = UDim.new(0, 10)
 
 ServersHoldPadding.Name = "ServersHoldPadding"
 ServersHoldPadding.Parent = ServersHold
